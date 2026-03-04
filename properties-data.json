@@ -280,6 +280,16 @@
           "details": "All sorts of spooky tour packages are available.",
           "phone": "(504) 434-7314",
           "website": "nolaghost.com"
+        },
+        {
+          "name": "Brown Flavor Tours",
+          "details": "Spanish-speaking tour guides offering unique cultural experiences.",
+          "website": "brownflavortour.com"
+        },
+        {
+          "name": "Streets of Sin (Walking Tours)",
+          "details": "Guided walking tours through the streets of New Orleans.",
+          "website": "www.streetsofsin.com"
         }
       ]
     }

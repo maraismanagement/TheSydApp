@@ -1,0 +1,300 @@
+{
+  "properties": [
+    {
+      "slug": "villa-a",
+      "guestyId": "6077269ef25260002f94b7e7",
+      "name": "Villa A",
+      "theme": "Street Parades",
+      "address": "1730 Clio Street, Villa A, New Orleans, LA 70113",
+      "bedrooms": 6,
+      "bathrooms": 3.5,
+      "sleeps": 16,
+      "wifi": {
+        "network": "TheSyd-A",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    },
+    {
+      "slug": "villa-b",
+      "guestyId": "607b6ae0aed119002ff5c202",
+      "name": "Villa B",
+      "theme": "Swamp to City",
+      "address": "1730 Clio Street, Villa B, New Orleans, LA 70113",
+      "bedrooms": 10,
+      "bathrooms": 6,
+      "sleeps": 24,
+      "wifi": {
+        "network": "TheSyd-B",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    },
+    {
+      "slug": "villa-c",
+      "guestyId": "607b677162c7fc002fbcbef8",
+      "name": "Villa C",
+      "theme": "Rhythm of New Orleans",
+      "address": "1730 Clio Street, Villa C, New Orleans, LA 70113",
+      "bedrooms": 8,
+      "bathrooms": 4.5,
+      "sleeps": 22,
+      "wifi": {
+        "network": "TheSyd-C",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    },
+    {
+      "slug": "villa-d",
+      "guestyId": "607753f964fe4200312283c0",
+      "name": "Villa D",
+      "theme": "Mardi Gras Magic",
+      "address": "1730 Clio Street, Villa D, New Orleans, LA 70113",
+      "bedrooms": 6,
+      "bathrooms": 3.5,
+      "sleeps": 14,
+      "wifi": {
+        "network": "TheSyd-D",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    },
+    {
+      "slug": "villa-1726",
+      "guestyId": "6782b6ec6e9c10000fe0f3ea",
+      "name": "Villa 1726",
+      "theme": "Louisiana Wildlife",
+      "address": "1726 Clio Street, New Orleans, LA 70113",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "sleeps": 15,
+      "wifi": {
+        "network": "TheSyd-1726",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    },
+    {
+      "slug": "villa-1728",
+      "guestyId": "678403487beb6100115bc0b1",
+      "name": "Villa 1728",
+      "theme": "Louisiana Living",
+      "address": "1728 Clio Street, New Orleans, LA 70113",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "sleeps": 15,
+      "wifi": {
+        "network": "TheSyd-1728",
+        "password": "thesyd2024"
+      },
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "parking": "Street parking available on Clio Street. Please follow posted signage.",
+      "trash": "Dumpster located in the rear parking area. Please bag all trash before disposing.",
+      "firstAid": "Located under the kitchen sink.",
+      "houseRules": [
+        "Quiet hours 10 PM – 8 AM",
+        "No smoking indoors",
+        "No parties or events without prior approval",
+        "No pets unless pre-approved",
+        "Please use wall-safe tape for decorations",
+        "Lock all doors when leaving the property"
+      ],
+      "checkoutInstructions": [
+        "Check-out by 11:00 AM",
+        "Start the dishwasher with any dirty dishes",
+        "Place all used towels in the bathtub",
+        "Take all trash to the dumpster",
+        "Turn off all lights and fans",
+        "Lock all doors and close all windows",
+        "Leave keys on the kitchen counter"
+      ]
+    }
+  ],
+  "shared": {
+    "pool": {
+      "hours": "Pool is open daily from 8 AM to 10 PM",
+      "maintenance": "Pool: Every Monday & Thursday (7:30 AM – 12 PM). Landscaping: Every other Thursday.",
+      "rules": [
+        "No glass – broken glass requires draining the pool",
+        "No yelling, large speakers, or loud noises",
+        "Children must be supervised by an adult at all times",
+        "No pets in the pool, hot tub, or sauna",
+        "No diving, running, or horseplay",
+        "No smoking in pool area"
+      ],
+      "hotTub": "The hot tub is available for guest use. Please limit sessions to 30 minutes. Controls are located on the side panel.",
+      "sauna": "The sauna is available for guest use. Please limit sessions to 20 minutes. Ensure the door is fully closed during use.",
+      "cabana": "The cabana area is shared among all villas. Please clean up after use and return furniture to its original position.",
+      "quietHours": "10 PM – 8 AM. Please be respectful of neighbors and other villa guests."
+    },
+    "services": {
+      "privateChefs": [
+        {
+          "name": "Chef Marc Bruckel",
+          "details": "Available Fridays, Saturdays, and Sundays only.",
+          "phone": "(818) 292-7157"
+        },
+        {
+          "name": "Chef Maria Vieages",
+          "details": "Full-service private dining experiences.",
+          "phone": "(504) 613-8505",
+          "email": "chefmariav@gmail.com",
+          "website": "www.chefmariav.com"
+        },
+        {
+          "name": "Chef Evan Troxell",
+          "details": "Gulf Coast Crawfish Co. — crawfish boils and seafood experiences.",
+          "phone": "(850) 543-1100"
+        }
+      ],
+      "crawfishBoil": [
+        {
+          "name": "Will's Catering",
+          "details": "Contact Will to arrange on-site jambalaya and seafood boil.",
+          "phone": "(504) 220-2641"
+        },
+        {
+          "name": "Gulf Coast Crawfish Co.",
+          "details": "Book an incredible crawfish boil experience with Evan!",
+          "phone": "(850) 543-1100",
+          "website": "www.gulfcoastcrawfish.com/booking"
+        }
+      ],
+      "hibachi": [
+        {
+          "name": "Hibachi2U",
+          "details": "Chef cooks for ~1.5 hours. Customer provides tables, chairs, plates and utensils — we bring the rest!",
+          "phone": "(321) 360-4308",
+          "website": "hibachi2u.com/new-orleans"
+        }
+      ],
+      "tourGuides": [
+        {
+          "name": "Two Chicks Walking Tours",
+          "details": "$395 for private group tours up to 14 people!",
+          "phone": "(504) 975-4386",
+          "website": "www.twochickswalkingtours.com"
+        },
+        {
+          "name": "Cajun Encounters (Swamp Tours)",
+          "details": "Transport is available to the swamp ~35 minutes away.",
+          "phone": "(504) 834-1770",
+          "website": "www.cajunencounters.com"
+        },
+        {
+          "name": "New Orleans Ghosts (Ghost Tours)",
+          "details": "All sorts of spooky tour packages are available.",
+          "phone": "(504) 434-7314",
+          "website": "nolaghost.com"
+        }
+      ]
+    }
+  }
+}

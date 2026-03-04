@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0d2b48">
+    <title>Villa D - The Syd</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-villa="villa-d">
+    <script src="../js/guest-info.js"></script>
+    <div class="app-container">
+        <div class="property-header">
+            <button class="search-btn-header" aria-label="Search">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </button>
+            <div class="header-content">
+                <h1>Villa D</h1>
+                <p class="theme-subtitle">Mardi Gras Magic</p>
+                <p class="page-subtitle">6 Bedrooms / 3.5 Bathrooms · Sleeps 14</p>
+            </div>
+            <div class="header-image">
+                <img src="../images/header-villa.jpg" alt="Villa D">
+            </div>
+        </div>
+
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <div class="nav-grid">
+            <a href="#" data-tab="villa" class="nav-item">Villa Info</a>
+            <a href="#" data-tab="pool" class="nav-item">Pool & Spa</a>
+            <a href="#" data-tab="services" class="nav-item">Services</a>
+            <a href="#" data-tab="explore" class="nav-item">Explore</a>
+            <a href="#" data-tab="events" class="nav-item">Events</a>
+            <a href="#" data-tab="contact" class="nav-item">Contact</a>
+        </div>
+
+        <!-- Tab 1: Villa Info (loaded dynamically from properties-data.json) -->
+        <div id="villa" class="tab-panel">
+            <div id="villa-info-content">
+                <section class="content-section">
+                    <p>Loading villa information...</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Tab 2: Pool & Spa (rendered by app.js) -->
+        <div id="pool" class="tab-panel">
+            <div id="pool-content">
+                <section class="content-section">
+                    <p>Loading pool & spa information...</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Tab 3: Services (rendered by app.js) -->
+        <div id="services" class="tab-panel">
+            <div id="services-content">
+                <section class="content-section">
+                    <p>Loading services...</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Tab 4: Explore -->
+        <div id="explore" class="tab-panel">
+            <section class="content-section">
+                <h2>Getting Around</h2>
+                <div class="info-block">
+                    <p><strong>Rideshare:</strong> Uber and Lyft are widely available in New Orleans.</p>
+                    <p><strong>Streetcar:</strong> The St. Charles streetcar line runs along St. Charles Avenue — a scenic and affordable way to get Uptown or to the French Quarter.</p>
+                    <p><strong>Biking:</strong> Blue Bikes are available at stations throughout the city.</p>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>Groceries</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Nearby Grocery Stores</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=Rouses+Market+Baronne+St+New+Orleans" target="_blank"><strong>Rouses Market</strong></a> - Full-service grocery store on Baronne Street, about 1 mile away.</li>
+                                <li><a href="https://maps.google.com/?q=Whole+Foods+Magazine+St+New+Orleans" target="_blank"><strong>Whole Foods</strong></a> - On Magazine Street in the Lower Garden District.</li>
+                                <li><a href="https://maps.google.com/?q=Dollar+General+MLK+Blvd+New+Orleans" target="_blank"><strong>Dollar General</strong></a> - Quick basics and household essentials nearby.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>Recommendations</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Good For Groups</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=Cochon+Restaurant+New+Orleans" target="_blank"><strong>Cochon</strong></a> - James Beard Award-winning Cajun cuisine. Great for large groups with family-style options.</li>
+                                <li><a href="https://maps.google.com/?q=Gianna+Restaurant+New+Orleans" target="_blank"><strong>Gianna</strong></a> - Italian-inspired restaurant on Magazine Street with shareable plates.</li>
+                                <li><a href="https://maps.google.com/?q=Mister+Mao+New+Orleans" target="_blank"><strong>Mister Mao</strong></a> - Tropical roadhouse cuisine on Magazine Street. Fun, flavorful, and group-friendly.</li>
+                                <li><a href="https://maps.google.com/?q=St+Roch+Market+New+Orleans" target="_blank"><strong>St. Roch Market</strong></a> - Food hall with something for everybody.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Breakfast & Coffee</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=Willa+Jean+New+Orleans" target="_blank"><strong>Willa Jean</strong></a> - Upscale Southern brunch in the CBD. Try the famous biscuits.</li>
+                                <li><a href="https://maps.google.com/?q=Bearcat+Cafe+New+Orleans" target="_blank"><strong>Bearcat Cafe</strong></a> - Popular brunch spot; expect a wait but worth it.</li>
+                                <li><a href="https://maps.google.com/?q=District+Donuts+New+Orleans" target="_blank"><strong>District Donuts</strong></a> - Artisan donuts and great coffee on Magazine Street.</li>
+                                <li><a href="https://maps.google.com/?q=Cafe+Du+Monde+New+Orleans" target="_blank"><strong>Cafe Du Monde</strong></a> - The iconic beignet experience. Open 24 hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>A Nice Meal</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=Commanders+Palace+New+Orleans" target="_blank"><strong>Commander's Palace</strong></a> - New Orleans' most famous restaurant. Jacket required.</li>
+                                <li><a href="https://maps.google.com/?q=Peche+Seafood+Grill+New+Orleans" target="_blank"><strong>Peche Seafood</strong></a> - James Beard Award-winning seafood in the Warehouse District.</li>
+                                <li><a href="https://maps.google.com/?q=Compere+Lapin+New+Orleans" target="_blank"><strong>Compere Lapin</strong></a> - Caribbean-meets-Creole fine dining at The Old No. 77 Hotel.</li>
+                                <li><a href="https://maps.google.com/?q=Herbsaint+Restaurant+New+Orleans" target="_blank"><strong>Herbsaint</strong></a> - French-Southern cuisine that's been a local favorite for years.</li>
+                                <li><a href="https://maps.google.com/?q=Shaya+Restaurant+New+Orleans" target="_blank"><strong>Shaya</strong></a> - Modern Israeli cuisine. Don't miss the pita bread.</li>
+                                <li><a href="https://maps.google.com/?q=Saba+Restaurant+New+Orleans" target="_blank"><strong>Saba</strong></a> - Mediterranean restaurant on Magazine Street with excellent lamb and hummus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Bars & Nightlife</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=Bar+Tonique+New+Orleans" target="_blank"><strong>Bar Tonique</strong></a> - Craft cocktails in a relaxed setting.</li>
+                                <li><a href="https://maps.google.com/?q=Cure+New+Orleans" target="_blank"><strong>Cure</strong></a> - James Beard Award-winning cocktail bar on Freret Street.</li>
+                                <li><a href="https://maps.google.com/?q=Frenchmen+Street+New+Orleans" target="_blank"><strong>Frenchmen Street</strong></a> - The heart of live music. Walk the street and pick a spot.</li>
+                                <li><a href="https://maps.google.com/?q=Pat+OBriens+New+Orleans" target="_blank"><strong>Pat O'Brien's</strong></a> - Classic NOLA bar. Get a Hurricane and enjoy the courtyard.</li>
+                                <li><a href="https://maps.google.com/?q=Tchoup+Yard+New+Orleans" target="_blank"><strong>Tchoup Yard</strong></a> - Large outdoor bar off Tchoupitoulas Street. Great for groups.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Entertainment</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><a href="https://maps.google.com/?q=National+WWII+Museum+New+Orleans" target="_blank"><strong>National WWII Museum</strong></a> - One of the top museums in the world. Allow 3-4 hours.</li>
+                                <li><a href="https://maps.google.com/?q=Ogden+Museum+Southern+Art+New+Orleans" target="_blank"><strong>Ogden Museum of Southern Art</strong></a> - Great art museum with Ogden After Hours on Thursdays.</li>
+                                <li><a href="https://maps.google.com/?q=Caesars+Superdome+New+Orleans" target="_blank"><strong>Caesars Superdome</strong></a> - Home of the Saints. Check for events during your stay.</li>
+                                <li><a href="https://maps.google.com/?q=Smoothie+King+Center+New+Orleans" target="_blank"><strong>Smoothie King Center</strong></a> - Home of the Pelicans. Concerts and events year-round.</li>
+                                <li><a href="https://maps.google.com/?q=Jam+NOLA+New+Orleans" target="_blank"><strong>Jam NOLA</strong></a> - Immersive art experience celebrating New Orleans culture.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>Neighborhood Itineraries</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Uptown / Garden District</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p><strong><u>Day</u></strong></p>
+                            <p>Brunch at Atchafalaya. Then stroll along Magazine Street for shopping and wander around the Garden District to check out the historic mansions. Stop at The Bulldog for a drink outside or for something fancier, head to The Columns Hotel.</p>
+                            <p><strong><u>Night</u></strong></p>
+                            <p>Head to Superior Seafood for one of the best happy hours in the city: $1.25 oysters and drink specials (4pm-6:30pm). You can either stay for dinner or continue on to Commander's Palace. Then head to Tchoup Yard or Miel, two large outdoor bars off Tchoupitoulas St.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>CBD / Warehouse District</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p><strong><u>Day</u></strong></p>
+                            <p>Start with breakfast at Willa Jean. Then walk to the WWII Museum or The Ogden Museum for engaging exhibits. Grab a mid-day latte at Mr. Wolf Espresso.</p>
+                            <p><strong><u>Night</u></strong></p>
+                            <p>For seafood dinner try Peche or Seaworthy. Next door is The Barnett for live music and drinks. Take the elevator to Alto, their rooftop poolside bar that closes at 10:30 PM.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>French Quarter</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p><strong><u>Classic FQ Night</u></strong></p>
+                            <p>Pre-dinner drink at Arnaud's French 75. Dinner at Galatoire's (jackets required) or Antoine's. After dinner, head to Pat O's for the courtyard and piano bar. Then walk to Caesars Casino for gambling.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>The Bywater / Marigny</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p><strong><u>Day</u></strong></p>
+                            <p>Brunch at Paladar 511 or The Country Club. Walk to Studio Be for art (opens at 2 PM, make a reservation). Walk to Parleaux Brewery, then make your way to Bacchanal for wine and live music.</p>
+                            <p><strong><u>Night</u></strong></p>
+                            <p>Dinner at Bywater American Bistro. Then walk to R Bar for a few drinks before making your way to Frenchmen Street for live music. The Spotted Cat, DBA, Blue Nile, and Maison are all good options.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Mid-City / City Park</span>
+                            <span class="accordion-arrow">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p><strong><u>Day</u></strong></p>
+                            <p>Start with beignets at Cafe du Monde in City Park. Walk across the bayou to see the ancient live oak trees. Visit the New Orleans Museum of Art or Sculpture Garden. For lunch, Parkway Tavern has some of the best po-boys in the city.</p>
+                            <p><strong><u>Night</u></strong></p>
+                            <p>Pre-dinner drinks at Bayou Beer and Wine Garden. Then enjoy dinner at Addis NOLA for great Ethiopian fare. For music, The Broadside and Banks Street Bar have events nearly every day.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tab 5: Events -->
+        <div id="events" class="tab-panel">
+            <section class="content-section">
+                <h2>Events</h2>
+                <div class="events-widget">
+                    <div class="events-header">
+                        <h3>What's Happening in NOLA</h3>
+                        <a href="https://www.wwoz.org/calendar/livewire-music" target="_blank" class="wwoz-link">WWOZ Livewire</a>
+                    </div>
+                    <div id="home-events"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tab 6: Contact -->
+        <div id="contact" class="tab-panel">
+            <section class="content-section">
+                <h2>Need Help?</h2>
+                <div class="info-block">
+                    <p>For questions or issues during your stay, please reach out through your booking platform or email us.</p>
+                    <a href="mailto:hello@thesyd.com" class="btn">Email hello@thesyd.com</a>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>Emergency</h2>
+                <div class="info-block">
+                    <p>For life-threatening emergencies, call 911.</p>
+                    <a href="tel:911" class="btn btn-emergency">Call 911</a>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>Property Address</h2>
+                <div class="info-block">
+                    <p><strong>Villa D</strong></p>
+                    <p>1730 Clio Street</p>
+                    <p>New Orleans, LA 70113</p>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2>First Aid</h2>
+                <div class="info-block">
+                    <p><strong>First Aid Kit:</strong> Located under the kitchen sink.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="app-footer">
+            <p style="font-size: 0.85rem; opacity: 0.7;">Share your memories with us! <strong>#THESYD</strong></p>
+        </div>
+    </div>
+
+    <button class="share-btn" aria-label="Share link">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
+        </svg>
+    </button>
+    <div class="share-toast">Link copied!</div>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/share.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

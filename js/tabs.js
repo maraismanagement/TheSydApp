@@ -1,23 +1,25 @@
-// Tab navigation functionality
+// Tab navigation functionality — bottom nav bar
 document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.nav-item[data-tab]');
+    const tabs = document.querySelectorAll('.bottom-nav-item[data-tab]');
     const panels = document.querySelectorAll('.tab-panel');
-    const headerImage = document.querySelector('.header-image img');
+    const header = document.querySelector('.property-header');
+
+    // Get the villa slug from body attribute
+    const villaSlug = document.body.dataset.villa;
 
     // Map tab IDs to header images
     const headerImages = {
-        'villa': { src: '../images/header-villa.jpg', position: 'center center' },
-        'pool': { src: '../images/header-pool.jpg', position: 'center center' },
-        'services': { src: '../images/header-services.jpg', position: 'center 30%' },
-        'explore': { src: '../images/header-explore.jpg', position: 'center 20%' },
-        'events': { src: '../images/header-events.jpg', position: 'center center' },
-        'contact': { src: '../images/header-contact.jpg', position: 'center center' }
+        'villa': villaSlug ? `../images/header-${villaSlug}.jpg` : '../images/header-villa.jpg',
+        'pool': '../images/header-pool.jpg',
+        'services': '../images/header-services.jpg',
+        'explore': '../images/header-explore.jpg',
+        'events': '../images/header-events.jpg',
+        'contact': '../images/header-contact.jpg'
     };
 
     function updateHeaderImage(tabId) {
-        if (headerImage && headerImages[tabId]) {
-            headerImage.src = headerImages[tabId].src;
-            headerImage.style.objectPosition = headerImages[tabId].position;
+        if (header && headerImages[tabId]) {
+            header.style.backgroundImage = `url('${headerImages[tabId]}')`;
         }
     }
 
@@ -52,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Update header image
             updateHeaderImage(targetId);
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 });

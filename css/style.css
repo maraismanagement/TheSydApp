@@ -707,6 +707,122 @@ a {
 }
 
 /* ================================
+   PARADE CALENDAR
+   ================================ */
+.parade-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.parade-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.parade-scroll::-webkit-scrollbar-track {
+    background: var(--light);
+    border-radius: 2px;
+}
+
+.parade-scroll::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.parade-day {
+    margin-bottom: 16px;
+}
+
+.parade-day:last-child {
+    margin-bottom: 0;
+}
+
+.parade-day-header {
+    font-family: 'Imperial', 'Space Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--white);
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    background: var(--primary);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+}
+
+.parade-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--divider);
+}
+
+.parade-item:last-child {
+    border-bottom: none;
+}
+
+.parade-time {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 2px;
+}
+
+.parade-location-header {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--accent);
+}
+
+.parade-krewes {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.krewe-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.krewe-link:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.krewe-name {
+    color: var(--primary);
+}
+
+.parade-trackers {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--light);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.parade-trackers p {
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.tracker-link {
+    display: inline-block;
+    margin: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+}
+
+.tracker-link:hover {
+    background: var(--accent-light);
+}
+
+/* ================================
    SEARCH
    ================================ */
 .search-btn-header {

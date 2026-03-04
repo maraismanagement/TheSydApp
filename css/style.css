@@ -1,5 +1,19 @@
-/* Fonts — fallback to Space Mono until custom fonts provided */
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Prestige';
+    src: url('../fonts/PrestigeEliteStd-Bd.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperial';
+    src: url('../fonts/URWImperialW01-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Reset & Base */
 * {
@@ -26,7 +40,7 @@ html, body {
 }
 
 body {
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Imperial', 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--primary);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -61,7 +75,7 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: normal;
     text-transform: uppercase;
@@ -88,7 +102,7 @@ body {
 }
 
 .section-header h2 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -126,7 +140,7 @@ body {
 }
 
 .villa-card .villa-name {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -194,7 +208,7 @@ body {
 }
 
 .header-content h1 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -224,7 +238,7 @@ body {
     padding: 16px 12px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -267,7 +281,7 @@ body {
 }
 
 .content-section h2 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -323,7 +337,7 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -367,7 +381,7 @@ body {
 .copy-btn {
     display: inline-block;
     padding: 6px 12px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 0.7rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -423,7 +437,7 @@ a {
     align-items: center;
     padding: 16px 0;
     cursor: pointer;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -477,7 +491,7 @@ a {
 }
 
 .events-widget h3 {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -486,7 +500,7 @@ a {
 }
 
 .wwoz-link {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 0.8rem;
     color: var(--primary-light);
     text-decoration: underline;
@@ -515,7 +529,7 @@ a {
 }
 
 .event-card-title {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1rem;
     font-weight: bold;
     color: var(--primary);
@@ -656,7 +670,7 @@ a {
 .search-input {
     flex: 1;
     padding: 14px 18px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Prestige', 'Space Mono', monospace;
     font-size: 1rem;
     border: 2px solid var(--primary);
     background: var(--white);

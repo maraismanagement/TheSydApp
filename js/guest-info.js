@@ -160,7 +160,7 @@ function showStayEndedScreen(guestName) {
       max-width: 400px;
     }
     .stay-ended-content h1 {
-      font-family: 'Space Mono', monospace;
+      font-family: 'Prestige', 'Space Mono', monospace;
       font-size: 1.6rem;
       color: var(--primary, #0d2b48);
       margin-bottom: 16px;
@@ -233,7 +233,7 @@ function showTooEarlyScreen(guestName, checkIn) {
       max-width: 400px;
     }
     .stay-ended-content h1 {
-      font-family: 'Space Mono', monospace;
+      font-family: 'Prestige', 'Space Mono', monospace;
       font-size: 1.6rem;
       color: var(--primary, #0d2b48);
       margin-bottom: 16px;

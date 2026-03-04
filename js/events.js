@@ -1,308 +1,152 @@
 // 2026 New Orleans Events Calendar
-// Sources: Marais NOLA Events Calendar, mardigrasneworleans.com
-// Format: Each entry is a parade "slot" - krewes array contains all krewes that roll together
+// Updated March 2026 — contemporaneous events from now through end of year
 
-const NOLA_PARADES_2026 = [
-  // January 30 - Friday
-  { date: "2026-01-30", time: "7:00 PM", location: "French Quarter",
-    krewes: [{ name: "Krewe Bohème", url: "https://www.mardigrasneworleans.com/parades/krewe-boheme" }] },
+const NOLA_EVENTS_2026 = [
+  // MARCH
+  { title: "Wednesday at the Square", startDate: "2026-03-11", endDate: "2026-05-06", category: "Music", teaser: "Free weekly outdoor concert series in Lafayette Square. Every Wednesday, 5 PM.", location: "Lafayette Square", link: "https://www.wednesaysatthesquare.com/" },
+  { title: "Irish Channel St. Patrick's Day Parade", startDate: "2026-03-14", category: "Parade", teaser: "Annual parade starting at Napoleon & Tchoupitoulas. 1 PM.", location: "Irish Channel", link: "https://www.stpatricksdayneworleans.com/icp.html" },
+  { title: "Super Sunday", startDate: "2026-03-15", category: "Culture", teaser: "Mardi Gras Indian tribes showcase hand-sewn suits. Noon at A.L. Davis Park.", location: "A.L. Davis Park", link: "https://www.mardigrasneworleans.com/history/mardi-gras-indians/super-sunday" },
+  { title: "St. Patrick's Day — Downtown Irish Club Parade", startDate: "2026-03-17", category: "Parade", teaser: "Downtown Irish Club rolls from Bywater to French Quarter.", location: "French Quarter", link: "https://www.stpatricksdayneworleans.com/" },
+  { title: "Danny Barker Banjo & Guitar Festival", startDate: "2026-03-24", category: "Music", teaser: "Celebrating the legacy of Danny Barker with live performances.", location: "Various", link: null },
+  { title: "New Orleans Opera Festival", startDate: "2026-03-24", endDate: "2026-04-01", category: "Music", teaser: "Inaugural opera festival in the French Quarter.", location: "French Quarter", link: null },
+  { title: "Tennessee Williams Festival", startDate: "2026-03-25", endDate: "2026-03-29", category: "Culture", teaser: "Literary festival featuring the famous 'Stella!' shouting contest.", location: "French Quarter", link: "https://www.tennesseewilliams.net/" },
+  { title: "Congo Square Rhythms Festival", startDate: "2026-03-28", category: "Music", teaser: "Free music festival celebrating the African roots of New Orleans music.", location: "Armstrong Park", link: null },
 
-  // January 31 - Saturday
-  { date: "2026-01-31", time: "6:30 PM", location: "French Quarter",
-    krewes: [
-      { name: "Krewe du Vieux", url: "https://www.mardigrasneworleans.com/parades/krewe-du-vieux" },
-      { name: "Krewedelusion", url: "https://www.mardigrasneworleans.com/parades/krewedelusion" }
-    ] },
+  // APRIL
+  { title: "Hogs for the Cause", startDate: "2026-04-10", endDate: "2026-04-11", category: "Festival", teaser: "90+ teams compete for BBQ Pork Grand Champion. Live music, great food, family fun.", location: "UNO Lakefront Arena", link: "https://www.hogsforthecause.org/" },
+  { title: "French Quarter Festival", startDate: "2026-04-16", endDate: "2026-04-19", category: "Festival", teaser: "FREE 4-day festival with 20+ stages of Louisiana music & local food.", location: "French Quarter", link: "https://frenchquarterfest.org/" },
+  { title: "Jazz Fest — Weekend 1", startDate: "2026-04-23", endDate: "2026-04-26", category: "Festival", teaser: "World-renowned music festival. Headliners include Eagles, Stevie Nicks, Lorde.", location: "Fair Grounds", link: "https://www.nojazzfest.com/" },
+  { title: "Jazz Fest — Weekend 2", startDate: "2026-04-30", endDate: "2026-05-03", category: "Festival", teaser: "Second weekend of Jazz Fest. Teddy Swims, T-Pain, and more.", location: "Fair Grounds", link: "https://www.nojazzfest.com/" },
 
-  // February 1 - Sunday
-  { date: "2026-02-01", time: "4:30 PM", location: "Marigny",
-    krewes: [{ name: "'tit Rex", url: null }] },
+  // MAY
+  { title: "Greek Fest", startDate: "2026-05-22", endDate: "2026-05-24", category: "Festival", teaser: "Greek food, music, and culture at Holy Trinity Cathedral.", location: "Holy Trinity Cathedral", link: null },
 
-  // February 6 - Friday
-  { date: "2026-02-06", time: "3:00 PM", location: "French Quarter",
-    krewes: [{ name: "Krewe of Cork", url: "https://www.mardigrasneworleans.com/parades/krewe-of-cork" }] },
-  { date: "2026-02-06", time: "5:00 PM", location: "Uptown",
-    krewes: [
-      { name: "Krewe of Oshun", url: "https://www.mardigrasneworleans.com/parades/krewe-of-oshun" },
-      { name: "Krewe of Cleopatra", url: "https://www.mardigrasneworleans.com/parades/krewe-of-cleopatra" }
-    ] },
+  // JUNE
+  { title: "Creole Tomato Festival", startDate: "2026-06-06", endDate: "2026-06-07", category: "Festival", teaser: "Celebrating the beloved Creole tomato with food, music, and cooking demos.", location: "French Market", link: null },
+  { title: "New Orleans Wine & Food Experience", startDate: "2026-06-10", endDate: "2026-06-14", category: "Festival", teaser: "Five days of wine seminars, dinners, and the Grand Tasting.", location: "Downtown", link: "https://www.nowfe.com/" },
+  { title: "Restaurant Week", startDate: "2026-06-15", endDate: "2026-06-21", category: "Food", teaser: "Special prix-fixe menus at participating restaurants across the city.", location: "Citywide", link: null },
+  { title: "LIV Golf New Orleans", startDate: "2026-06-26", endDate: "2026-06-28", category: "Sports", teaser: "LIV Golf comes to New Orleans for the first time at Bayou Oaks.", location: "Bayou Oaks at City Park", link: null },
 
-  // February 7 - Saturday
-  { date: "2026-02-07", time: "11:30 AM", location: "Uptown",
-    krewes: [
-      { name: "Krewe of Pontchartrain", url: "https://www.mardigrasneworleans.com/parades/krewe-of-pontchartrain" },
-      { name: "Legion of Mars", url: "https://www.mardigrasneworleans.com/parades/legion-of-mars" },
-      { name: "Krewe of Choctaw", url: "https://www.mardigrasneworleans.com/parades/krewe-of-choctaw" },
-      { name: "Krewe of Freret", url: "https://www.mardigrasneworleans.com/parades/krewe-of-freret" }
-    ] },
-  { date: "2026-02-07", time: "5:30 PM", location: "Uptown",
-    krewes: [{ name: "Knights of Sparta", url: "https://www.mardigrasneworleans.com/parades/knights-of-sparta" }] },
-  { date: "2026-02-07", time: "6:15 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Pygmalion", url: "https://www.mardigrasneworleans.com/parades/krewe-of-pygmalion" }] },
+  // JULY
+  { title: "Essence Festival", startDate: "2026-07-02", endDate: "2026-07-05", category: "Festival", teaser: "Celebration of Black music, culture & community at the Superdome.", location: "Superdome", link: "https://www.essencefestival.com/" },
+  { title: "Tales of the Cocktail", startDate: "2026-07-19", endDate: "2026-07-23", category: "Festival", teaser: "Global gathering of spirits professionals and cocktail enthusiasts.", location: "French Quarter", link: "https://talesofthecocktail.org/" },
 
-  // February 8 - Sunday
-  { date: "2026-02-08", time: "11:00 AM", location: "Uptown",
-    krewes: [{ name: "Mystic Krewe of Femme Fatale", url: "https://www.mardigrasneworleans.com/parades/mystic-krewe-of-femme-fatale" }] },
-  { date: "2026-02-08", time: "12:30 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Carrollton", url: "https://www.mardigrasneworleans.com/parades/krewe-of-carrollton" }] },
-  { date: "2026-02-08", time: "1:00 PM", location: "French Quarter",
-    krewes: [{ name: "Krewe of Barkus", url: "https://www.mardigrasneworleans.com/parades/krewe-of-barkus" }] },
-  { date: "2026-02-08", time: "1:30 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of King Arthur", url: "https://www.mardigrasneworleans.com/parades/krewe-of-king-arthur" }] },
+  // AUGUST
+  { title: "COOLinary New Orleans", startDate: "2026-08-01", endDate: "2026-08-31", category: "Food", teaser: "Month-long dining deals: 2-course lunches & 3-course dinners at top restaurants.", location: "Citywide", link: "https://www.coolinarynola.com/" },
+  { title: "Museum Month", startDate: "2026-08-01", endDate: "2026-08-31", category: "Culture", teaser: "Visit several museums for the price of one membership.", location: "Citywide", link: null },
 
-  // February 11 - Wednesday
-  { date: "2026-02-11", time: "6:15 PM", location: "Uptown",
-    krewes: [
-      { name: "Krewe of Druids", url: "https://www.mardigrasneworleans.com/parades/krewe-of-druids" },
-      { name: "Krewe of Alla", url: "https://www.mardigrasneworleans.com/parades/krewe-of-alla" }
-    ] },
+  // SEPTEMBER - OCTOBER
+  { title: "NOLAxNOLA", startDate: "2026-09-15", endDate: "2026-10-15", category: "Music", teaser: "Citywide celebration of local musicians and music venues with dozens of live performances.", location: "Citywide", link: null },
 
-  // February 12 - Thursday (Muses!)
-  { date: "2026-02-12", time: "4:30 PM", location: "Uptown",
-    krewes: [{ name: "Knights of Chaos", url: "https://www.mardigrasneworleans.com/parades/knights-of-chaos" }] },
-  { date: "2026-02-12", time: "5:30 PM", location: "Uptown",
-    krewes: [{ name: "Knights of Babylon", url: "https://www.mardigrasneworleans.com/parades/knights-of-babylon" }] },
-  { date: "2026-02-12", time: "6:00 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Muses", url: "https://www.mardigrasneworleans.com/parades/krewe-of-muses" }] },
+  // OCTOBER
+  { title: "Boo at the Zoo", startDate: "2026-10-16", endDate: "2026-10-31", category: "Family", teaser: "Family-friendly Halloween event at the Audubon Zoo.", location: "Audubon Zoo", link: null },
 
-  // February 13 - Friday
-  { date: "2026-02-13", time: "11:30 AM", location: "French Quarter",
-    krewes: [{ name: "Krewe of Bosom Buddies", url: "https://www.mardigrasneworleans.com/parades/krewe-of-bosom-buddies" }] },
-  { date: "2026-02-13", time: "5:30 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Hermes", url: "https://www.mardigrasneworleans.com/parades/krewe-of-hermes" }] },
-  { date: "2026-02-13", time: "6:30 PM", location: "Uptown",
-    krewes: [
-      { name: "Krewe d'Etat", url: "https://www.mardigrasneworleans.com/parades/krewe-detat" },
-      { name: "Krewe of Morpheus", url: "https://www.mardigrasneworleans.com/parades/krewe-of-morpheus" }
-    ] },
-
-  // February 14 - Saturday (Endymion!)
-  { date: "2026-02-14", time: "11:00 AM", location: "Uptown",
-    krewes: [{ name: "Krewe of Iris", url: "https://www.mardigrasneworleans.com/parades/krewe-of-iris" }] },
-  { date: "2026-02-14", time: "12:00 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Tucks", url: "https://www.mardigrasneworleans.com/parades/krewe-of-tucks" }] },
-  { date: "2026-02-14", time: "4:00 PM", location: "Mid-City",
-    krewes: [{ name: "Krewe of Endymion", url: "https://www.mardigrasneworleans.com/parades/krewe-of-endymion" }] },
-
-  // February 15 - Sunday (Bacchus!)
-  { date: "2026-02-15", time: "11:00 AM", location: "Uptown",
-    krewes: [
-      { name: "Krewe of Okeanos", url: "https://www.mardigrasneworleans.com/parades/krewe-of-okeanos" },
-      { name: "Krewe of Mid-City", url: "https://www.mardigrasneworleans.com/parades/krewe-of-mid-city" }
-    ] },
-  { date: "2026-02-15", time: "12:00 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Thoth", url: "https://www.mardigrasneworleans.com/parades/krewe-of-thoth" }] },
-  { date: "2026-02-15", time: "5:15 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Bacchus", url: "https://www.mardigrasneworleans.com/parades/krewe-of-bacchus" }] },
-
-  // February 16 - Monday (Lundi Gras)
-  { date: "2026-02-16", time: "All Day", location: "Woldenberg Park",
-    krewes: [{ name: "Zulu Lundi Gras Festival", url: null }] },
-  { date: "2026-02-16", time: "5:15 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Proteus", url: "https://www.mardigrasneworleans.com/parades/krewe-of-proteus" }] },
-  { date: "2026-02-16", time: "6:00 PM", location: "Uptown",
-    krewes: [{ name: "Krewe of Orpheus", url: "https://www.mardigrasneworleans.com/parades/krewe-of-orpheus" }] },
-
-  // February 17 - Mardi Gras Day!
-  { date: "2026-02-17", time: "8:00 AM", location: "Uptown",
-    krewes: [{ name: "Krewe of Zulu", url: "https://www.mardigrasneworleans.com/parades/krewe-of-zulu" }] },
-  { date: "2026-02-17", time: "10:30 AM", location: "Uptown",
-    krewes: [
-      { name: "Krewe of Rex", url: "https://www.mardigrasneworleans.com/parades/krewe-of-rex" },
-      { name: "Krewe of Elks Orleans", url: "https://www.mardigrasneworleans.com/parades/krewe-of-elks-orleans" },
-      { name: "Krewe of Crescent City", url: "https://www.mardigrasneworleans.com/parades/krewe-of-crescent-city" }
-    ] }
+  // DECEMBER
+  { title: "Celebration in the Oaks", startDate: "2026-11-27", endDate: "2026-01-03", category: "Holiday", teaser: "Spectacular holiday light display throughout City Park.", location: "City Park", link: null },
+  { title: "Christmas New Orleans Style", startDate: "2026-12-01", endDate: "2026-12-31", category: "Holiday", teaser: "Month-long holiday celebration with bonfires on the levee, caroling, and special events.", location: "Citywide", link: null }
 ];
 
-// Major festivals (separate from parades)
-const NOLA_FESTIVALS_2026 = [
-  { name: "French Quarter Festival", date: "2026-04-16", endDate: "2026-04-19", category: "festival", description: "FREE 4-day festival with 20+ stages of Louisiana music & local food", location: "French Quarter", url: "https://frenchquarterfest.org/" },
-  { name: "Jazz Fest - Weekend 1", date: "2026-04-23", endDate: "2026-04-26", category: "festival", description: "World-renowned music festival at the Fair Grounds", location: "Fair Grounds", url: "https://www.nojazzfest.com/" },
-  { name: "Jazz Fest - Weekend 2", date: "2026-04-30", endDate: "2026-05-03", category: "festival", description: "Second weekend of Jazz Fest", location: "Fair Grounds", url: "https://www.nojazzfest.com/" },
-  { name: "Essence Festival", date: "2026-07-02", endDate: "2026-07-05", category: "festival", description: "Celebration of Black music, culture & community", location: "Superdome", url: "https://www.essencefestival.com/" }
-];
+// Format date for display
+function formatEventDate(startDate, endDate) {
+  const opts = { month: 'short', day: 'numeric' };
+  const start = new Date(startDate + 'T12:00:00');
 
-// Get parades for the next N days
-function getUpcomingParades(daysAhead = 14) {
-  // Get current time in Central Time
   const now = new Date();
-  const centralTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+  now.setHours(0, 0, 0, 0);
+  const tomorrow = new Date(now);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const startDay = new Date(start);
+  startDay.setHours(0, 0, 0, 0);
 
-  // Calculate the cutoff: events are removed at 1 AM the following day
-  const cutoffDate = new Date(centralTime);
-  if (centralTime.getHours() >= 1) {
-    cutoffDate.setHours(0, 0, 0, 0);
-  } else {
-    cutoffDate.setDate(cutoffDate.getDate() - 1);
-    cutoffDate.setHours(0, 0, 0, 0);
-  }
+  let prefix = '';
+  if (startDay.getTime() === now.getTime()) prefix = 'Today · ';
+  else if (startDay.getTime() === tomorrow.getTime()) prefix = 'Tomorrow · ';
 
-  const futureDate = new Date(cutoffDate);
-  futureDate.setDate(futureDate.getDate() + daysAhead);
+  let formatted = start.toLocaleDateString('en-US', opts);
 
-  // Filter parades within the date range
-  let upcoming = NOLA_PARADES_2026.filter(parade => {
-    const paradeDate = new Date(parade.date + 'T12:00:00');
-    return paradeDate >= cutoffDate && paradeDate <= futureDate;
-  });
-
-  // If no upcoming parades (e.g., we're not in parade season), show next 2 weeks of scheduled parades
-  if (upcoming.length === 0) {
-    // Find the earliest parade date
-    const sortedParades = [...NOLA_PARADES_2026].sort((a, b) => new Date(a.date) - new Date(b.date));
-    if (sortedParades.length > 0) {
-      const firstParadeDate = new Date(sortedParades[0].date + 'T12:00:00');
-      const twoWeeksLater = new Date(firstParadeDate);
-      twoWeeksLater.setDate(twoWeeksLater.getDate() + daysAhead);
-
-      upcoming = NOLA_PARADES_2026.filter(parade => {
-        const paradeDate = new Date(parade.date + 'T12:00:00');
-        return paradeDate >= firstParadeDate && paradeDate <= twoWeeksLater;
-      });
+  if (endDate && endDate !== startDate) {
+    const end = new Date(endDate + 'T12:00:00');
+    if (end.getTime() !== start.getTime()) {
+      formatted += ' – ' + end.toLocaleDateString('en-US', opts);
     }
   }
 
-  return upcoming.sort((a, b) => {
-    const dateCompare = new Date(a.date) - new Date(b.date);
-    if (dateCompare !== 0) return dateCompare;
-    // Sort by time within same day
-    return a.time.localeCompare(b.time);
-  });
+  return prefix + formatted;
 }
 
-// Special Mardi Gras day labels
-const SPECIAL_DAYS = {
-  '2026-02-16': 'Lundi Gras',
-  '2026-02-17': 'Mardi Gras Day'
-};
-
-// Format date for display
-function formatParadeDate(dateStr) {
-  const date = new Date(dateStr + 'T12:00:00');
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const tomorrow = new Date(today);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-
-  // Check for special Mardi Gras days
-  const specialLabel = SPECIAL_DAYS[dateStr];
-
-  // Format: "Friday, Feb 7" or "Tuesday, Feb 18 - Mardi Gras Day"
-  const options = { weekday: 'long', month: 'short', day: 'numeric' };
-  let formatted = date.toLocaleDateString('en-US', options);
-
-  // Add "Today" or "Tomorrow" prefix if applicable
-  if (date.getTime() === today.getTime()) {
-    formatted = 'Today - ' + formatted;
-  } else if (date.getTime() === tomorrow.getTime()) {
-    formatted = 'Tomorrow - ' + formatted;
-  }
-
-  // Add special day label
-  if (specialLabel) {
-    formatted += ' - ' + specialLabel;
-  }
-
-  return formatted;
-}
-
-// Render scrollable parade list on home page
-function renderHomeEvents(containerId) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
-  const parades = getUpcomingParades(14); // Next 2 weeks
-
-  if (parades.length === 0) {
+// Render event cards
+function renderEventCards(events, container) {
+  if (!events || events.length === 0) {
     container.innerHTML = `
       <div class="event-card">
         <div class="event-card-content">
-          <div class="event-card-date">Check Back Soon</div>
-          <div class="event-card-title">No Parades This Week</div>
-          <div class="event-card-desc">The next parade season is coming up! Check <a href="https://www.mardigrasneworleans.com/parades/" target="_blank">MardiGrasNewOrleans.com</a> for the full schedule.</div>
+          <div class="event-card-date">Coming Soon</div>
+          <div class="event-card-title">No Upcoming Events</div>
+          <div class="event-card-desc">Check <a href="https://www.neworleans.com/events/upcoming-events/" target="_blank">NewOrleans.com</a> for the latest events.</div>
         </div>
       </div>
     `;
     return;
   }
 
-  // Group parades by date
-  const groupedByDate = {};
-  parades.forEach(parade => {
-    if (!groupedByDate[parade.date]) {
-      groupedByDate[parade.date] = [];
-    }
-    groupedByDate[parade.date].push(parade);
-  });
+  let html = '<div class="events-scroll">';
 
-  let html = '<div class="parade-scroll">';
+  events.forEach(evt => {
+    const dateStr = formatEventDate(evt.startDate, evt.endDate);
+    const linkOpen = evt.link ? `<a href="${evt.link}" target="_blank" class="event-card-link">` : '';
+    const linkClose = evt.link ? '</a>' : '';
+    const categoryHtml = evt.category
+      ? `<span class="event-card-category">${evt.category}</span>`
+      : '';
+    const locationHtml = evt.location
+      ? `<span class="event-card-location">${evt.location}</span>`
+      : '';
+    const teaser = evt.teaser
+      ? `<div class="event-card-desc">${evt.teaser}</div>`
+      : '';
 
-  Object.keys(groupedByDate).sort().forEach(date => {
-    const dateLabel = formatParadeDate(date);
-    const dayParades = groupedByDate[date];
-
-    html += `<div class="parade-day">`;
-    html += `<div class="parade-day-header">${dateLabel}</div>`;
-
-    // Sort by time chronologically within each day
-    const sortedParades = dayParades.sort((a, b) => {
-      // Handle "All Day" events - put them first
-      if (a.time === 'All Day') return -1;
-      if (b.time === 'All Day') return 1;
-      // Parse times for comparison
-      const parseTime = (t) => {
-        const match = t.match(/(\d+):(\d+)\s*(AM|PM)/i);
-        if (!match) return 0;
-        let hours = parseInt(match[1]);
-        const mins = parseInt(match[2]);
-        const period = match[3].toUpperCase();
-        if (period === 'PM' && hours !== 12) hours += 12;
-        if (period === 'AM' && hours === 12) hours = 0;
-        return hours * 60 + mins;
-      };
-      return parseTime(a.time) - parseTime(b.time);
-    });
-
-    sortedParades.forEach(slot => {
-      // Build krewe names with links
-      const kreweLinks = slot.krewes.map(krewe => {
-        if (krewe.url) {
-          return `<a href="${krewe.url}" target="_blank" class="krewe-link">${krewe.name}</a>`;
-        }
-        return `<span class="krewe-name">${krewe.name}</span>`;
-      }).join(', ');
-
-      html += `
-        <div class="parade-item">
-          <div class="parade-location-header">${slot.location}</div>
-          <div class="parade-time">${slot.time}</div>
-          <div class="parade-info">
-            <div class="parade-krewes">${kreweLinks}</div>
+    html += `
+      ${linkOpen}
+      <div class="event-card">
+        <div class="event-card-content">
+          <div class="event-card-date">${dateStr}</div>
+          <div class="event-card-title">${evt.title}</div>
+          ${teaser}
+          <div class="event-card-meta">
+            ${categoryHtml}
+            ${locationHtml}
           </div>
         </div>
-      `;
-    });
-
-    html += `</div>`;
+      </div>
+      ${linkClose}
+    `;
   });
 
   html += '</div>';
-
-  // Add parade tracker links during Mardi Gras season
-  const today = new Date();
-  const mardiGrasStart = new Date('2026-01-25');
-  const mardiGrasEnd = new Date('2026-02-19');
-  if (today >= mardiGrasStart && today <= mardiGrasEnd) {
-    html += `
-      <div class="parade-trackers">
-        <p><strong>Track parades live:</strong></p>
-        <a href="https://www.wdsu.com/article/download-wdsu-parade-tracker/37907878" target="_blank" class="tracker-link">WDSU Parade Tracker</a>
-        <a href="https://www.wwltv.com/article/entertainment/events/mardi-gras/download-wwl-tvs-2026-mardi-gras-parade-tracker-app/289-c3bb04e5-980b-4939-aea2-37815b6338fa" target="_blank" class="tracker-link">WWL Parade Tracker</a>
-      </div>
-    `;
-  }
+  html += `<a href="https://www.neworleans.com/events/upcoming-events/" target="_blank" class="see-all-events">See All Events →</a>`;
 
   container.innerHTML = html;
+}
+
+// Render upcoming events on page
+function renderHomeEvents(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const now = new Date();
+  now.setHours(0, 0, 0, 0);
+
+  // Filter to upcoming events (end date hasn't passed, or start date if no end date)
+  const upcoming = NOLA_EVENTS_2026.filter(evt => {
+    const checkDate = evt.endDate || evt.startDate;
+    return new Date(checkDate + 'T23:59:59') >= now;
+  });
+
+  // Sort by start date
+  upcoming.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+
+  // Show next 8 upcoming events
+  renderEventCards(upcoming.slice(0, 8), container);
 }
 
 // Auto-initialize on page load

@@ -514,14 +514,24 @@ a {
 }
 
 .accordion-arrow {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1;
-    color: var(--primary);
-    opacity: 0.5;
-    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.accordion-arrow svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--primary);
+    opacity: 0.4;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .accordion-item.open .accordion-arrow {
@@ -530,7 +540,7 @@ a {
 
 .accordion-content {
     display: none;
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
     background: var(--light);
     border-top: 1px solid var(--divider);
 }

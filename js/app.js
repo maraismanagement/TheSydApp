@@ -168,7 +168,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${chef.name}</span>
-              <span class="accordion-arrow">&#8744;</span>
+              <span class="accordion-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
             </div>
             <div class="accordion-content">
               <p>${chef.details}</p>
@@ -186,7 +186,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">&#8744;</span>
+              <span class="accordion-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>
@@ -204,7 +204,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">&#8744;</span>
+              <span class="accordion-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>
@@ -222,7 +222,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">&#8744;</span>
+              <span class="accordion-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>

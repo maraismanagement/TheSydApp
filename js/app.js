@@ -168,7 +168,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${chef.name}</span>
-              <span class="accordion-arrow">+</span>
+              <span class="accordion-arrow">&#8744;</span>
             </div>
             <div class="accordion-content">
               <p>${chef.details}</p>
@@ -186,7 +186,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">+</span>
+              <span class="accordion-arrow">&#8744;</span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>
@@ -204,7 +204,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">+</span>
+              <span class="accordion-arrow">&#8744;</span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>
@@ -222,7 +222,7 @@ function renderServicesTab(services) {
           <div class="accordion-item">
             <div class="accordion-header">
               <span>${svc.name}</span>
-              <span class="accordion-arrow">+</span>
+              <span class="accordion-arrow">&#8744;</span>
             </div>
             <div class="accordion-content">
               <p>${svc.details}</p>
@@ -244,7 +244,6 @@ function initAccordions() {
 
     newHeader.addEventListener('click', function() {
       const item = this.parentElement;
-      const arrow = this.querySelector('.accordion-arrow');
       const isOpen = item.classList.contains('open');
 
       // Close all accordion items in same accordion group
@@ -252,14 +251,11 @@ function initAccordions() {
       if (accordion) {
         accordion.querySelectorAll('.accordion-item').forEach(i => {
           i.classList.remove('open');
-          const a = i.querySelector('.accordion-arrow');
-          if (a) a.textContent = '+';
         });
       }
 
       if (!isOpen) {
         item.classList.add('open');
-        if (arrow) arrow.textContent = '−';
       }
     });
   });

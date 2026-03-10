@@ -3,7 +3,7 @@
 
 const NOLA_EVENTS_2026 = [
   // MARCH
-  { title: "Wednesday at the Square", startDate: "2026-03-11", endDate: "2026-05-06", category: "Music", teaser: "Free weekly outdoor concert series in Lafayette Square. Every Wednesday, 5 PM.", location: "Lafayette Square", link: "https://www.wednesaysatthesquare.com/" },
+  { title: "Wednesday at the Square", startDate: "2026-03-11", endDate: "2026-05-06", category: "Music", teaser: "Free weekly outdoor concert series in Lafayette Square. Every Wednesday, 5 PM.", location: "Lafayette Square", link: "https://www.ylcwats.com/" },
   { title: "Irish Channel St. Patrick's Day Parade", startDate: "2026-03-14", category: "Parade", teaser: "Annual parade starting at Napoleon & Tchoupitoulas. 1 PM.", location: "Irish Channel", link: "https://www.stpatricksdayneworleans.com/icp.html" },
   { title: "Super Sunday", startDate: "2026-03-15", category: "Culture", teaser: "Mardi Gras Indian tribes showcase hand-sewn suits. Noon at A.L. Davis Park.", location: "A.L. Davis Park", link: "https://www.mardigrasneworleans.com/history/mardi-gras-indians/super-sunday" },
   { title: "St. Patrick's Day — Downtown Irish Club Parade", startDate: "2026-03-17", category: "Parade", teaser: "Downtown Irish Club rolls from Bywater to French Quarter.", location: "French Quarter", link: "https://www.stpatricksdayneworleans.com/" },

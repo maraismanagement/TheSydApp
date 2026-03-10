@@ -280,14 +280,9 @@ function getBookingContactUrl(source) {
   return { name: 'Email', url: 'mailto:hello@thesyd.com', color: null };
 }
 
-// Update the welcome message with guest name
+// Update the welcome message with guest name — disabled, show villa name only
 function updateWelcomeMessage(guestName) {
-  const welcomeElement = document.querySelector('.header-content h1');
-
-  if (welcomeElement && guestName && guestName !== 'Guest') {
-    const firstName = guestName.split(' ')[0];
-    welcomeElement.textContent = `Welcome, ${firstName}!`;
-  }
+  return;
 }
 
 // Add dynamic contact button based on booking source

@@ -10,7 +10,7 @@
       "bathrooms": 3.5,
       "sleeps": 16,
       "wifi": {
-        "network": "TheSyd-A",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",
@@ -44,7 +44,7 @@
       "bathrooms": 6,
       "sleeps": 24,
       "wifi": {
-        "network": "TheSyd-B",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",
@@ -78,7 +78,7 @@
       "bathrooms": 4.5,
       "sleeps": 22,
       "wifi": {
-        "network": "TheSyd-C",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",
@@ -112,7 +112,7 @@
       "bathrooms": 3.5,
       "sleeps": 14,
       "wifi": {
-        "network": "TheSyd-D",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",
@@ -146,7 +146,7 @@
       "bathrooms": 3,
       "sleeps": 15,
       "wifi": {
-        "network": "TheSyd-1726",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",
@@ -180,7 +180,7 @@
       "bathrooms": 3,
       "sleeps": 15,
       "wifi": {
-        "network": "TheSyd-1728",
+        "network": "The Syd",
         "password": "Poolclosesat10"
       },
       "checkIn": "4:00 PM",

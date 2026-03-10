@@ -217,8 +217,9 @@
         "No diving, running, or horseplay",
         "No smoking in pool area"
       ],
-      "hotTub": "The hot tub is available for guest use. Please limit sessions to 30 minutes. Controls are located on the side panel.",
-      "sauna": "To use the sauna, simply pour water from the sauna bucket on the rocks and enjoy the steam. Please limit sessions to 20 minutes. Ensure the door is fully closed during use.",
+      "hotTub": "The hot tub is available for guest use. Controls are located on the side panel.",
+      "sauna": "To use the sauna, simply pour water from the sauna bucket on the rocks and enjoy the steam. Ensure the door is fully closed during use.",
+      "sydCycle": "Try The Syd Cycle — hot tub, sauna, pool, repeat. It's the best way to unwind after a long day in the city.",
       "quietHours": "10 PM – 8 AM. Please be respectful of neighbors and other villa guests."
     },
     "services": {

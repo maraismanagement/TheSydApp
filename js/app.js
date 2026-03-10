@@ -136,6 +136,13 @@ function renderPoolTab(pool) {
     </section>
 
     <section class="content-section">
+      <h2>The Syd Cycle</h2>
+      <div class="info-block">
+        <p>${pool.sydCycle}</p>
+      </div>
+    </section>
+
+    <section class="content-section">
       <h2>Pool Rules</h2>
       <ul>
         ${pool.rules.map(rule => `<li>${rule}</li>`).join('')}

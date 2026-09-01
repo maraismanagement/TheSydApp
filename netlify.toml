@@ -9,3 +9,10 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# Private guest guide, not for search. The header covers every response, not
+# just the HTML pages, so the JSON the app fetches is out of Google too.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
